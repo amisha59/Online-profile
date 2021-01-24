@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta name="description" content="potfoliyo">
+	<meta name="keywords" content="Java, css, Amisha Bhatta/">
+	<meta name="author" content="Amisha Bhatta"/>
+	
+	<link href="https://fonts.google.com/specimen/Work+Sans">
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<style>
+		body{
+		background-image: url("../Images/cont.jpg");
+		height: 150vh;
+	    background-repeat: no-repeat;
+	    background-size: 100%,70%;
+	  }
+	input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+}
+
+	label {
+  		padding: 12px 12px 12px 0;
+  		display: inline-block;
+}
+
+    input[type=submit] {
+       background-color: #4CAF50;
+       color: white;
+       padding: 12px 20px;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+       float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+	.box{
+		border-radius: 7px;
+		padding: 20px;
+		padding-left: 5%; 
+	}
+	.co1{
+		float: left;
+		width: 30%;
+		margin-top: 7px;
+	}
+	.co2{
+		float: left;
+		width: 75%;
+		margin-top: 7px;
+
+	}
+	/* Clear floats after the columns*/
+	.row1:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	</style>
+
+	
+</head>
+<body>
+	<!---for navigation bar---> 
+  <div id="div2" class="navigation">
+      	<nav>
+      	<ul>
+      		<li><a href="../home.html"><i class="fas fa-home"></i> Home</a></li>
+      		<li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+      		<li><a href="l.html"><i class="fas fa-user-friends"></i> About Me</a></li>
+      		<li><a href="resarch.html"> <i class="fas fa-search"></i>Research</a></li>
+      		<li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+      		<li><a href="cv.html"><i class="fas fa-user"></i> My CV</a></li>
+      	</ul>
+      	</nav>
+      </div>
+
+
+      <div class="box">
+  <form action="bhattaamisha4@gmail.com">
+  <div class="row1">
+    <div class="co1">
+      <label for="fname">First Name</label>
+    </div>
+     <!----asking to write the first name---->
+    <div class="co2">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    </div>
+  </div>
+
+  <div class="row1">
+    <div class="co1">
+      <label for="lname">Last Name</label>
+    </div>
+
+    <!---asking to write the last name--->
+    <div class="co2">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    </div>
+  </div>
+
+  <div class="row1">
+    <div class="co1">
+      <label for="country">Country</label>
+    </div>
+    <div class="co2">
+      <select id="country" name="country">
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Australia">Australia</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+  </div>
+  <div class="row1">
+    <div class="co1">
+      <label for="comment">Comments</label>
+    </div>
+    <!---comment me after loooking at my website--->
+    <div class="co2">
+      <textarea id="subject" name="subjects" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row1">
+          <input type="submit" class="send-message-button" value="Submit" />
+  </div>
+  </form>
+  <!--closing the form---->
+</div>
+
+<!--foter starts from here--->
+<footer class="footer">
+	<ul>
+		<a href="https://www.facebook.com/"><li><i class="fab fa-facebook-f"></i></li></a>
+		<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+	</ul>
+	<h5>Copyright &copy; Amisha Bhatta | All rights reserved</h5>
+</footer>
+</body>
+</html>

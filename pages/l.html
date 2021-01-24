@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<meta name="description" content="potfoliyo">
+	<meta name="keywords" content="Java, css, Amisha Bhatta/">
+	<meta name="author" content="Amisha Bhatta"/>
+	
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link href="https://fonts.google.com/specimen/Raleway">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<style>
+		body{
+		background-image: url("../Images/backa.png"); 
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    height: 400vh;
+	}
+	    .head{
+	    	color: white;
+	    	font-size: 40px;
+	    }
+	   /*pictures kept in table*/
+		.picdiv{
+			width: 50%;
+            height: 400px;
+            position: relative;
+            left: 30%;
+            top: 5%;
+	        background-image: url("../Images/s1.png");
+		}
+		@keyframes slider{
+ 			0%{ background-image: url("../Images/s1.png"); } 
+            35%{ background-image: url("../Images/s2.png"); }
+        }
+		 img{
+	    	width:450px;
+	    	height: 460px;
+	    	padding-right: 5%;
+	    	padding-left: 8%;
+	    }
+
+
+        .backdiv{
+        	background-image: url(../Images/back.jpg);
+        }
+        .me{
+        	padding-left: 10%;
+        	padding-right: 10%;
+        }
+	</style>
+</head>
+<body>
+	<div id="div2" class="navigation"><!--Creating navigation bar--->
+	<nav>
+      	<ul>
+      		<li><a href="../home.html"><i class="fas fa-home"></i> Home</a></li>
+      		<li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+      		<li><a href="l.html"><i class="fas fa-user-friends"></i> About Me</a></li>
+      		<li><a href="research.html"><i class="fas fa-search"></i> Research</a></li>
+      		<li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+      		<li><a href="cv.html"><i class="fas fa-user"></i> My CV</a></li>
+      	</ul>
+      	</nav>
+     </div> 	
+	<center>
+		<h1 class="head">Wow, a whole page just about me!</h1>
+		</center>
+		<p class="me">Hello! My name is Amisha Bhatta. I'm the maker of this website.I'm 19 years old. I live in lokanthali,Bhaktapur. I'm currently studying at islington college as a networking student located at kamalpokhari,kathmandu. It has been almost a year I joined my college. I started learning programming from class 10. It is the most exciting and knowledgable topic i've ever studied.</p>
+		<section>
+	<div class="container">
+		<div class="row">
+			<p> </p>
+		</div>
+	</div>
+	</section>
+	<hr color="blue" style="width: 90%">
+	 <div class="right">
+	 	<center>
+       <p>After joining my college, i have gained alot of practical knowlegde which is so benefical and can be implemented in our real life as well. I have developed many projects by using programming language. I have developed a small library Management System using python. When someone borrows any book from the library the number of books automatically decreases and if the person comes to return then the number automatically increates. This system was created for the use of small library. </p>
+        </center>
+        <table>
+	        	<tr>
+	        		<td><img src="../Images/s1.png"></td>
+	        		<td><img src="../Images/s4.png"></td>
+	        	</tr>
+                </table>
+      </div> 
+        <div class="p2">
+         	<p>I also learned how to use java programming language to create development systems. Recently, there was the project to make a Graphical Management System(GUI). This GUI was about the company to hire or terminate the new employee or the working employee in the company.  </p>
+         	
+         </div>
+        <table>
+	        	<tr>
+	        		<td><img src="../Images/aj1.png"></td>
+	        		<td><img src="../Images/aj2.png"></td>
+	        	</tr>
+                </table>
+          <div class="p3">
+         	<p>In the process of creating various projects, i also created one database which is used for consultancy. This database is used in consultancy where the data can be stored. The database that was created was for small consultancy byt similarly for bigger companies database can be created. Here, we can easily find how many employess are working, how many emloyees are of which age with their phone number and many more information can be received. Here,some pictures are below of my work.</p>
+         </div>
+          <div class="picdiv3">
+				<img src="../Images/d1.png" class="carousel-slide1" height= "500">
+				<img src="../Images/d2.png" class="carousel-slide1" height= "500">
+				<img src="../Images/d3.png" class="carousel-slide1" height="500">
+				<img src="../Images/d4.png" class="carousel-slide1" height="500">
+				<img src="../Images/d5.png" class="carousel-slide1" height="500">
+
+		</div>
+		<center>
+			<button onclick="change(-1)" id="previousBtn" style="border-radius: 6px; margin: 4px;">Previous</button>
+			<button onclick="change(1)" id="nextBtn" style="border-radius: 6px; margin: 4px;">next..</button>
+
+		</center>
+		
+		<script type="text/javascript">
+			index=0;
+			show(index);
+
+			function show(a) {
+				var imgs = document.getElementsByClassName("carousel-slide1");
+
+				if (a>imgs.length-1) {
+					index=0;
+				}
+				if(a<0){
+				    index= imgs.length - 1;
+			    } 
+
+			    for (var p = 0; p<= imgs.length-1; p++) {
+				    imgs[p].style.display="none";
+			    }
+
+			    imgs[index].style.display="block";
+		    }
+            
+			function automatic(){
+			  index++;
+			  show(index);
+			  setTimeout(automatic, 3000);
+		    }
+
+			automatic();
+
+		    function change(a){
+			  index+= a;
+			  show(index);
+		    }
+		</script>
+         </div>
+	 <!--footer-->
+	 <footer class="footer">
+	<ul>
+		<li><a href="https://www.facebook.com/amisha.bhatta.3"><i class="fab fa-facebook-f"></i></a></li>
+		<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+	</ul>
+	<h5>Copyright &copy; Amisha Bhatta | All rights reserved</h5>
+</footer>
+</body>
+</html>
